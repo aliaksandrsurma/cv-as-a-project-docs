@@ -8,17 +8,17 @@ const config: Config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://aliaksandrsurma.github.io/cv-as-a-project-docs',
+  url: 'https://aliaksandrsurma.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/cv-as-a-project-docs/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'aliaksandrsurma', // Usually your GitHub org/user name.
   projectName: 'cv-as-a-project-docs', // Usually your repo name.
 
-  //recommended for GitHub Pages deployments by Docusaurus documentaton
+  // recommended for GitHub Pages deployments by Docusaurus documentaton
   trailingSlash: false,
 
   onBrokenLinks: 'throw',
