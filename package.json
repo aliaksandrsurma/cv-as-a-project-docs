@@ -1,13 +1,13 @@
 {
   "name": "cv-as-a-project-documentation",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
-    "deploy": "docusaurus deploy",
+    "deploy": "npm version patch && docusaurus deploy",
     "clear": "docusaurus clear",
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
@@ -27,7 +27,8 @@
     "@docusaurus/module-type-aliases": "3.0.1",
     "@docusaurus/tsconfig": "3.0.1",
     "@docusaurus/types": "3.0.1",
-    "typescript": "~5.2.2"
+    "typescript": "~5.2.2",
+    "semver": "^7.5.4"
   },
   "browserslist": {
     "production": [
