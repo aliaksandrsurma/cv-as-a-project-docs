@@ -8,10 +8,10 @@ const config: Config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://aliaksandrsurma.github.io',
+  url: 'https://docs.alexsurma.com',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/cv-as-a-project-docs/',
+  baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -76,7 +76,7 @@ const config: Config = {
 
         {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/aliaksandrsurma/cv-as-a-project-docs',
           label: 'GitHub',
           position: 'right',
         },
@@ -95,20 +95,20 @@ const config: Config = {
           ],
         },
         {
-          title: 'Community',
+          title: 'Links',
           items: [
             {
               label: 'Stack Overflow',
               href: 'https://stackoverflow.com/questions/tagged/docusaurus',
             },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
-            },
+            // {
+            //   label: 'Discord',
+            //   href: 'https://discordapp.com/invite/docusaurus',
+            // },
+            // {
+            //   label: 'Twitter',
+            //   href: 'https://twitter.com/docusaurus',
+            // },
           ],
         },
         {
