@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkcv_as_a_project_documentation=self.webpackChunkcv_as_a_project_documentation||[]).push([[5729],{644:o=>{o.exports=JSON.parse('{"permalink":"/cv-as-a-project-docs/blog/tags/docusaurus","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

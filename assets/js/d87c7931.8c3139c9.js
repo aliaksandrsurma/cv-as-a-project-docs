@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkcv_as_a_project_documentation=self.webpackChunkcv_as_a_project_documentation||[]).push([[1964],{5711:a=>{a.exports=JSON.parse('{"label":"docusaurus","permalink":"/cv-as-a-project-docs/blog/tags/docusaurus","allTagsPath":"/cv-as-a-project-docs/blog/tags","count":4,"unlisted":false}')}}]);
