@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkcv_as_a_project_documentation=self.webpackChunkcv_as_a_project_documentation||[]).push([[9700],{5688:a=>{a.exports=JSON.parse('{"label":"hola","permalink":"/blog/tags/hola","allTagsPath":"/blog/tags","count":1,"unlisted":false}')}}]);
