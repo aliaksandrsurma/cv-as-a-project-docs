@@ -1,6 +1,7 @@
 import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
+const simplePlantUML = require('@akebifiky/remark-simple-plantuml')
 
 const config: Config = {
   title: 'CV-as-a-project',
@@ -38,18 +39,13 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
+          remarkPlugins: [simplePlantUML],
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/aliaksandrsurma/cv-as-a-project-docs/edit/main/',
         },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
+        blog: false,
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -61,11 +57,11 @@ const config: Config = {
     // Replace with your project's social card
     image: 'TODO: img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'CV as a project',
-      logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
-      },
+      title: 'CV AS A PROJECT',
+      // logo: {
+      //   alt: 'My Site Logo',
+      //   src: 'img/logo.svg',
+      // },
       items: [
         {
           type: 'docSidebar',
@@ -73,8 +69,6 @@ const config: Config = {
           position: 'left',
           label: 'Documentation',
         },
-
-        {to: '/blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/aliaksandrsurma/cv-as-a-project-docs',
           label: 'GitHub',
@@ -115,17 +109,18 @@ const config: Config = {
           title: 'More',
           items: [
             {
-              label: 'Blog',
-              to: '/blog',
+              label: 'GitHub UI',
+              href: 'https://github.com/aliaksandrsurma/cv-as-a-project-ui',
             },
             {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              label: 'GitHub API',
+              href: 'https://github.com/aliaksandrsurma/cv-as-a-project-api',
             },
+
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Alex Surma 'CV-as-a-project'. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,
