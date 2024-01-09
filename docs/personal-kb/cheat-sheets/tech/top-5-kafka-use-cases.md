@@ -1,0 +1,1 @@
+![Diagram](./images/top-5-kafka-use-cases.png)

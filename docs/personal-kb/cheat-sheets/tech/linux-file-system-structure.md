@@ -1,0 +1,1 @@
+![Diagram](./images/linux-file-system-structure.png)
