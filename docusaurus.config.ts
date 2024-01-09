@@ -3,6 +3,13 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 const simplePlantUML = require('@akebifiky/remark-simple-plantuml')
 
+import semver from 'semver';
+import packageJson from './package.json';
+
+
+const appVersion = packageJson.version;
+const formattedVersion = semver.clean(appVersion);
+
 const config: Config = {
   title: 'CV-as-a-project',
   tagline: 'Software design is cool',
@@ -70,6 +77,18 @@ const config: Config = {
           label: 'Documentation',
         },
         {
+          type: 'docSidebar',
+          sidebarId: 'personalSidebar',
+          position: 'left',
+          label: 'Solution Architect KB',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'tutorialSidebar',
+          position: 'left',
+          label: 'Tutorial',
+        },
+        {
           href: 'https://github.com/aliaksandrsurma/cv-as-a-project-docs',
           label: 'GitHub',
           position: 'right',
@@ -77,14 +96,14 @@ const config: Config = {
       ],
     },
     footer: {
-      style: 'dark',
+      style:'light',
       links: [
         {
           title: 'Docs',
           items: [
             {
               label: 'Tutorial',
-              to: '/docs/intro',
+              to: '/docs/tutorial/intro',
             },
           ],
         },
@@ -120,13 +139,22 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Alex Surma 'CV-as-a-project'. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Alex Surma. CV-as-a-project-docs v${formattedVersion} <br/> Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
     },
   } satisfies Preset.ThemeConfig,
+  plugins: [
+    [
+      require.resolve('docusaurus-lunr-search'),
+      {
+        indexBaseUrl: true,
+        languages: ['en'],
+      },
+    ]
+  ]
 };
 
 export default config;
