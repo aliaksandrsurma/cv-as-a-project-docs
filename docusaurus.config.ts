@@ -82,12 +82,12 @@ const config: Config = {
           position: 'left',
           label: 'Solution Architect KB',
         },
-        {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'left',
-          label: 'Tutorial',
-        },
+        // {
+        //   type: 'docSidebar',
+        //   sidebarId: 'tutorialSidebar',
+        //   position: 'left',
+        //   label: 'Tutorial',
+        // },
         {
           href: 'https://github.com/aliaksandrsurma/cv-as-a-project-docs',
           label: 'GitHub',
@@ -108,34 +108,41 @@ const config: Config = {
           ],
         },
         {
-          title: 'Links',
+          title: 'References',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: 'Docusaurus',
+              href: 'https://docusaurus.io',
             },
-            // {
-            //   label: 'Discord',
-            //   href: 'https://discordapp.com/invite/docusaurus',
-            // },
-            // {
-            //   label: 'Twitter',
-            //   href: 'https://twitter.com/docusaurus',
-            // },
+            {
+              label: 'OpenAPI',
+              href: 'https://openapis.org',
+            },
+            {
+              label: 'Spring Boot',
+              href: 'https://spring.io/projects/spring-boot/',
+            },
           ],
         },
         {
-          title: 'More',
+          title: 'CV-as-a-project sources (GitHub)',
           items: [
             {
-              label: 'GitHub UI',
+              label: 'Documentation',
+              href: 'https://github.com/aliaksandrsurma/cv-as-a-project-docs',
+            },
+            {
+              label: 'UI',
               href: 'https://github.com/aliaksandrsurma/cv-as-a-project-ui',
             },
             {
-              label: 'GitHub API',
+              label: 'API',
               href: 'https://github.com/aliaksandrsurma/cv-as-a-project-api',
             },
-
+            {
+              label: 'API Spec',
+              href: 'https://github.com/aliaksandrsurma/cv-as-a-project-api-spec',
+            }
           ],
         },
       ],
@@ -151,7 +158,9 @@ const config: Config = {
       require.resolve('docusaurus-lunr-search'),
       {
         indexBaseUrl: true,
+        highlightResult: true,
         languages: ['en'],
+        excludeRoutes: ['/docs/tutorial'],
       },
     ]
   ]

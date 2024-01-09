@@ -1,7 +1,11 @@
 ---
 sidebar_position: 1
+title: Architecture Styles
+tags:
+  - architecture
+  - architecture style
 ---
 
-#
+# Software Architecture Styles
 
-![Diagram](./images/software-architecture-styles.jpg)
+![Architecture Styles](./images/software-architecture-styles.jpg)

@@ -9,6 +9,7 @@
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "deploy-patch": "npm version patch && docusaurus deploy",
+    "deploy-minor": "npm version minor && docusaurus deploy",
     "deploy-major": "npm version major && docusaurus deploy",
     "clear": "docusaurus clear",
     "serve": "docusaurus serve",

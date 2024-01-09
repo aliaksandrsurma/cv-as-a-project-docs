@@ -1,10 +1,18 @@
 ---
 sidebar_position: 1
+title: Key Quality Attributes
+tags:
+  - quality attributes
+  - NFR
+  - system design
+  - availability
+  - throughput
+  - scalability
 ---
 
-#
+# Key Quality Attributes
 
-![Diagram](./images/system-design-cheat-sheet.png)
+![Diagram](./images/key-quality-attributes.png)
 
 
 1. High Availability
