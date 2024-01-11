@@ -4,7 +4,7 @@ title: Solution Document
 tags:
   - solution document
   - SAD
-  - documentation
+  - architecture documentation
   - C4 model
 ---
 
@@ -60,8 +60,8 @@ api -> db: fetch data
 
 | Name | Role | Notes |
 | -------------------- | ----------------------------------| ---------------------------------- |
-| Alex Surma | PO | Representing a "biz" part and requirements |
-| Alex Surma | Solution Architect | Drives a solution and technical design |
+| Alex Surma | PO | Represents a "biz" part, goals, KPI vision and requirements |
+| Alex Surma | Solution Architect | Drives solution and technical design |
 | Alex Surma | FE and BE Dev | I'm doing dev too ;) |
 | Alex Surma | QA | Again me ;) |
 | Alex Surma | SRE/DevOps | Have to play this role too |
@@ -81,13 +81,24 @@ api -> db: fetch data
 
 ## Overview
 ***
-### Context
 :::note
-[[TODO:Section description]]
+_This section provides the context for Design / Solution Architect work.  Any architecture should be designed having all context details in mind.
+Diagram showing new feature/system in context or details of a business problem are good candidate for this section\
+Potentially section may also cover:_ 
+ - _Technology Strategy (if any exist in the company)_
+ - _Business Architecture, org structure of company/department_
+ - _Current Data or Security environment of company/department_
 :::
-Problem statement:
-* me as an **interviewer** always find hard to check 'architect' skills and experience without looking into real deliverables and artifacts. What I usually get is a PDF file and have to prepare questions that should somehow confirm past experience       
-* me as an **interviewee** want to better and more efficiently present myself as a professional engineer/architect. Working on large enterprice projects with lot of legacy solutions makes it hard to share outcomes of my work. Want to have something more then plain, boring text in PDF (that can be easily AI generated nowadays). Set of artifacts I can elaborate on, use as a starting points or references during potential white-boarding sessions with my interviewers
+
+### Problem statement
+
+Working on large enterprise projects with lot of legacy solutions, internal policies and strict NDAs makes it hard to share outcome of architect's work or evaluate skills. Wite-boarding sessions may partially address the problem, however such sessions may have their own problems too (lack of time, stress, etc..)   
+
+* me as an **interviewer** always find hard to check 'architect' skills and experience without looking into real deliverables and artifacts. What I usually get is a PDF/Word file and have to prepare questions that should somehow confirm past experience.       
+* me as an **interviewee** would like to
+    * better and more efficiently present myself as a professional engineer/architect;
+    * demonstrate design, documentation, tech skills as a set of artifacts rather than plain, boring text in PDF/Word (not mentioning that it can be easily AI generated nowadays);
+    * have all artifacts public and handy so I can elaborate on them, use as starting points or reference during potential white-boarding sessions with my interviewers
 
 ![Context Diagram](./images/cv-context.png)
 :::info
@@ -98,22 +109,37 @@ Example - TBD<br />
 
 :::
 
-  
-demonstrate design, documentation, tech skills as a set of artifacts rather than text in MS word file/PDF
+## Requirements
+***
 
 ### Business goals
-If I were to define something measurable here I would do this as a 'interview to offer' KPI
-e.g. increase 'interview to offer' rate from 10% to 30%
+If I were to define something measurable here I would do this as an 'interview to offer' KPI
+e.g. increase my 'interview to offer' rate from 10% to 30%
+
+### Functional requirements
+
+Well, to keep it simple my public CV site should have following pages:
+* landing page describing idea of "CV as a project";  
+* 'about' page  - personal information, just a short summary about me;
+* 'resume' page - this is basically a typical CV with sections like Education, experience,, skills, courses;
+* 'projects' page - key achievements/solutions that I can publicly share and show off;
+* 'stats' page - place for 'dynamic' stats like age, number of GitHub commits, etc.. _low priority, can be excluded from MVP/initial phase_
+* 'contact' page - _low priority, can be excluded from MVP/initial phase_   
+
+
+### Non-functional requirements
+This is what really drives an architecture and design in my case as 'functional requirements' could be implemented as set of static HTML pages.\
+NFRs may represent key stakeholders’ quality criteria for the solution = > using a different section for them    
 
 ### Quality attributes
 #### Global
 | Category | Sub category | Detailed requirement | How to measure |
-| :------------------- | :---------------------------- | ------------------------------------------- | ----------------------- |
-| Maintainability | Simplicity | Overall solution shouldn't be 'overengineered' and should serve its main purpose of presenting design/documentation/tech skills | [Manual] system audit |
+| :------------------- | :---------------------------- | ------------------------------------------- | :---------------------- |
+| Maintainability | Simplicity | Overall solution shouldn't be 'over engineered' and should serve its main purpose of presenting design/documentation/tech skills | [Manual] system audit |
 |                 | Code quality | All project code should have a minimum quality that will be defined through quality gate tool ||
 | Presentability | Presentability | CV UI and project documentation should have a public access, so it's easy to share and present on interview  | |
-|                | Up to date tools / technologies | Common sense here. As this is a 'pet like' project I can spend much time on adding the most modern.  | |
-| Availability | Uptime | Not a strong requirement in my case. I can 'shutdown' all components without business impact  | |
+|                | Up to date tools / technologies | Common sense here. As this is a 'pet like' project I can spend much time on adding the most modern frameworks. On the other hand can't build it using JSPs with JBOSS as an application server ;)  | [Manual] architecture review |
+| Availability | Uptime | Not a strong requirement in my case. I can 'shutdown' all components without business impact  | N/A |
 |||||
 
 
@@ -126,54 +152,77 @@ e.g. increase 'interview to offer' rate from 10% to 30%
 
 
 
-## Dependencies & assumptions
-Description with assumptions, constraints and dependencies with others
+### Constraints
+I would put just one constraint here - budget. Operational costs shouldn't be be more then ~15 USD per month.  
 
-# Solution Design
+### Dependencies & assumptions
+Nothing to mention here as there is no dependency on external vendors / other people 
+
+## Solution Design
+***
+
 :::note
 [[TODO:Section description]]
+
+_If replatforming or significant changes should include both 'as is' and 'to be' sections
+
+- _Baseline Design/Architecture_
+- _Target Design/Architecture_
+
+business-oriented diagram (often referred as high level diagram)
+logical view
+components
+data
+
+High-level solution structure diagram (highly recommended).
+List of architecturally significant components and descriptions of their technology stack and integration with each other.
+architectural styles/patterns to be used.
+
 :::
 
-High level diagram representation for solution.
+### Summary
 
-If replatforming or significant changes should include both 'as is' and 'to be' sections
+CV-as-a-project solution should follow MACH architecture style, layered architecture with MVP as a pattern for 'dynamic' data on storefront. 
 
-Baseline Design/Architecture
-Target Design/Architecture
-
-Should include all necessary views  e.g
-
-Logical View
-Components
-Data View
-Infrastructure / Deployment View
-[Any other views to be placed here]
+Logically "CV-as-a-project" should be split into following modules (could be mapped into deployable Java/NodeJS/static HTML packages):
+* **CV storefront**: TBD short description
+* **Tech Documentation Portal**: TBD short description
+* **Back-end CV API**: TBD short description 
 
 
-May also include ''addressing quality attributes' if applicable e.g 
+### Key Components
+\
+\
+![Components](./images/cv-components.png)
+<div align="center">Diagram</div>
 
-Addressing Key Quality Attributes
+| System/Component | Description | Functionality/Capability | Tech documentation / URL |
+| :-------------------- | :----------------------------- | :------------------------------------------- | :----------------------- |
+| CV Storefront||||
+| CV API||||
+| DB ||||
+| Documentation ||||
+| API Spec ||||
 
-Availability
-....
-Usability
-
-
-
-## API Specification
-Link to [SwaggerHub](https://design.api.3stripes.io/home) to the API specification.
-
-## Database schema
-Entities represtantion for data model based on [PlantUML](https://plantuml.com/ie-diagram) format.
+### Infrastructure / Deployment
+TBD
 
 
 
-# Architecture decision records
+### API Specification
+API-First approach - TBD - link 
+
+### Database schema
+
+
+
+
+## Architecture decision records
 | Issue | Impact | Status |
 | ---------------------- | ---------------------------------- | ----------------------------------- |
 | | | |
 
-# Change Log
-# References
-# Appendix
-## Examples
+## Change Log
+## References
+## Appendix
+### Examples
