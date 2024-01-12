@@ -1,10 +1,15 @@
 ---
-sidebar_position: 1
+sidebar_position: 3
+title: REST API Authentication methods
+tags:
+  - REST API
+  - authentication
+  - system design
 ---
 
 # REST API Authentication methods
 
-![Diagram](./images/rest-api-auth-methods.png)
+![REST API Authentication methods](./images/rest-api-auth-methods.png)
 
 
 1. **Basic Authentication**:

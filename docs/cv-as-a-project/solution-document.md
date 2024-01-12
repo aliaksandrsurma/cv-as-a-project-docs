@@ -60,13 +60,14 @@ api -> db: fetch data
 
 | Name | Role | Notes |
 | -------------------- | ----------------------------------| ---------------------------------- |
-| Alex Surma | PO | Represents a "biz" part, goals, KPI vision and requirements |
-| Alex Surma | Solution Architect | Drives solution and technical design |
-| Alex Surma | FE and BE Dev | I'm doing dev too ;) |
+| Alex Surma | PO | Represents a "biz" part, goals, KPI, vision and requirements |
+| Alex Surma | Solution Architect | Owns and drives solution and technical design |
+| Alex Surma | FE and BE Dev | I'm doing dev too ;). Well, not just me - together with my Copilot friend |
 | Alex Surma | QA | Again me ;) |
-| Alex Surma | SRE/DevOps | Have to play this role too |
+| Alex Surma | SRE / DevOps | Have to play this role too |
+| Alex Surma | PM / Delivery Lead | Try to do my best here. Mostly time management effort as a whole is a hobby/pet project  |
 | N/A | HRs | Users of my public personal 'CV' site |
-| N/A | Architects/Directors/<br /> Tech leads | People who might interview me, reviewers of current documentation,<br /> back-end components, API, source code |
+| N/A | Architects / Directors /<br /> Tech leads | People who might interview me, reviewers of current documentation,<br /> back-end components, API, source code |
 
 
 ## Definitions, Acronyms, Abbreviations
@@ -182,12 +183,12 @@ architectural styles/patterns to be used.
 
 ### Summary
 
-CV-as-a-project solution should follow MACH architecture style, layered architecture with MVP as a pattern for 'dynamic' data on storefront. 
+CV-as-a-project solution should follow MACH architecture style, layered architecture with MVVM(?) as a pattern for 'dynamic' data on storefront. 
 
 Logically "CV-as-a-project" should be split into following modules (could be mapped into deployable Java/NodeJS/static HTML packages):
-* **CV storefront**: TBD short description
-* **Tech Documentation Portal**: TBD short description
-* **Back-end CV API**: TBD short description 
+* **CV public site**
+* **Tech Documentation Portal**
+* **Back-end CV API** 
 
 
 ### Key Components
@@ -213,7 +214,7 @@ TBD
 API-First approach - TBD - link 
 
 ### Database schema
-
+TBD
 
 
 
