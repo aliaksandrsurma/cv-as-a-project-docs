@@ -99,12 +99,17 @@ const config: Config = {
       style:'light',
       links: [
         {
-          title: 'Docs',
+          title: 'Quick links',
           items: [
             {
               label: 'Tutorial',
               to: '/docs/tutorial/intro',
             },
+            {
+              label: 'CV Site',
+              to: 'www.alexsurma.com'
+            },
+
           ],
         },
         {
@@ -125,18 +130,18 @@ const config: Config = {
           ],
         },
         {
-          title: 'CV-as-a-project sources (GitHub)',
+          title: 'Sources (GitHub)',
           items: [
             {
-              label: 'Documentation',
+              label: 'Documentation src',
               href: 'https://github.com/aliaksandrsurma/cv-as-a-project-docs',
             },
             {
-              label: 'UI',
+              label: 'Storefront Site src',
               href: 'https://github.com/aliaksandrsurma/cv-as-a-project-ui',
             },
             {
-              label: 'API',
+              label: 'CV API src',
               href: 'https://github.com/aliaksandrsurma/cv-as-a-project-api',
             },
             {
@@ -160,7 +165,7 @@ const config: Config = {
         indexBaseUrl: true,
         highlightResult: true,
         languages: ['en'],
-        excludeRoutes: ['/docs/tutorial'],
+        excludeRoutes: ['/docs/tutorial/*'],
       },
     ]
   ]

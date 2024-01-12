@@ -82,14 +82,17 @@ api -> db: fetch data
 
 ## Overview
 ***
-:::note
-_This section provides the context for Design / Solution Architect work.  Any architecture should be designed having all context details in mind.
-Diagram showing new feature/system in context or details of a business problem are good candidate for this section\
-Potentially section may also cover:_ 
- - _Technology Strategy (if any exist in the company)_
- - _Business Architecture, org structure of company/department_
- - _Current Data or Security environment of company/department_
-:::
+<details>
+  <summary>Section description</summary>
+  <div>
+    _This section provides the context for Design / Solution Architect work.  Any architecture should be designed having all context details in mind.
+    Diagram showing new feature/system in context or details of a business problem are good candidate for this section\
+    Potentially section may also cover:_ 
+    - _Technology Strategy (if any exist in the company)_
+    - _Business Architecture, org structure of company/department_
+    - _Current Data or Security environment of company/department_
+  </div>
+</details>
 
 ### Problem statement
 
@@ -161,25 +164,26 @@ Nothing to mention here as there is no dependency on external vendors / other pe
 
 ## Solution Design
 ***
+<details>
+  <summary>TODO: Section description</summary>
+  <div>
+    <div>
+    _If replatforming or significant changes should include both 'as is' and 'to be' sections_
 
-:::note
-[[TODO:Section description]]
+      - _Baseline Design/Architecture_
+      - _Target Design/Architecture_
 
-_If replatforming or significant changes should include both 'as is' and 'to be' sections
+      business-oriented diagram (often referred as high level diagram)
+      logical view
+      components
+      data
 
-- _Baseline Design/Architecture_
-- _Target Design/Architecture_
-
-business-oriented diagram (often referred as high level diagram)
-logical view
-components
-data
-
-High-level solution structure diagram (highly recommended).
-List of architecturally significant components and descriptions of their technology stack and integration with each other.
-architectural styles/patterns to be used.
-
-:::
+      High-level solution structure diagram (highly recommended).
+      List of architecturally significant components and descriptions of their technology stack and integration with each other.
+      architectural styles/patterns to be used.
+    </div>
+  </div>
+</details>
 
 ### Summary
 

@@ -1,9 +1,0 @@
-{
-  "label": "Cheatsheets",
-  "className": "xxx",
-  "position": 2,
-  "link": {
-    "type": "generated-index",
-    "description": "My archive of cheat sheets, architecture diagrams, and other useful reference materials"
-  }
-}

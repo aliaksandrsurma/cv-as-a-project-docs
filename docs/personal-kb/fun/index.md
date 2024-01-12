@@ -11,7 +11,7 @@ There is nothing better than managing you memes and fun pictures as a code ;). L
 
 ## Memes
 ***
-
+Adopting a new technology\
 ![Image](./adopting-a-new-technology.png)
 
 ---
