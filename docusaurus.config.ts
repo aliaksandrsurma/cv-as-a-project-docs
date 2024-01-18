@@ -107,7 +107,7 @@ const config: Config = {
             },
             {
               label: 'CV Site',
-              to: 'www.alexsurma.com'
+              to: 'https://www.alexsurma.com'
             },
 
           ],
