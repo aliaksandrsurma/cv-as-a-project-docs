@@ -15,4 +15,5 @@ Migrating\revising my archive of old notes and files into something more managea
 
 1. [Architecture Practice](./cheat-sheets/architecture-practice) 
 2. [Deployment and Infrastructure](./category/deployment-and-infrastructure)
-3. In progress
+3. TBD
+4. TBD
